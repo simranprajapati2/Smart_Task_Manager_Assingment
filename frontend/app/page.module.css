@@ -1,0 +1,414 @@
+/* Main container */
+.container {
+    min-height: 100vh;
+    background: #f4f7fb;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: #172d4f;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.navButton,
+.activeNav,
+.logoutButton {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.navButton {
+    background: transparent;
+    color: white;
+}
+
+.navButton:hover,
+.activeNav {
+    background: #2563eb;
+    color: white;
+}
+
+.logoutButton {
+    background: #ef4444;
+    color: white;
+}
+
+/* Login page */
+.loginPage {
+    min-height: 100vh;
+    background: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* Login card */
+.loginCard {
+    background: white;
+    width: 400px;
+    padding: 40px 45px;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.loginCard h1 {
+    color: #172d4f;
+    margin: 20px 0 10px;
+}
+
+.loginCard h2 {
+    color: #172d4f;
+    margin: 20px 0 10px;
+}
+
+.loginCard p {
+    color: #64748b;
+    margin: 10px 0 20px;
+}
+
+/* Login logo */
+.logo {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Input fields */
+.input,
+.textarea,
+.select,
+.smallSelect {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    margin: 7px 0;
+    background: white;
+}
+
+.loginCard .input {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.loginCard .input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.smallSelect {
+    width: 140px;
+}
+
+/* Buttons */
+.button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 7px 4px;
+}
+
+.button:hover {
+    background: #1d4ed8;
+}
+
+.secondaryButton {
+    background: #64748b;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 7px 4px;
+}
+
+.loginCard .button {
+    width: 100%;
+    margin: 15px 0 10px;
+    padding: 13px;
+}
+
+.loginCard .secondaryButton {
+    width: 100%;
+    margin: 10px 0;
+    padding: 13px;
+}
+
+/* Register button */
+.linkButton {
+    display: block;
+    margin: 5px auto;
+    padding: 10px 15px;
+    background: transparent;
+    color: #2563eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.linkButton:hover {
+    background: #eff6ff;
+    text-decoration: underline;
+}
+
+/* Edit button */
+.editButton {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Delete button */
+.deleteButton {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Message */
+.message {
+    margin: 20px 30px;
+    padding: 12px;
+    background: #dbeafe;
+    color: #1e3a8a;
+    border-radius: 6px;
+}
+
+.loginCard .message {
+    margin: 20px 0 0;
+    padding: 12px;
+}
+
+/* Welcome section */
+.welcome {
+    margin: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.welcome h1 {
+    margin: 0;
+    color: #172d4f;
+}
+
+/* Statistics */
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 30px;
+}
+
+.statCard {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.statCard h3 {
+    color: #64748b;
+}
+
+.statCard strong {
+    font-size: 30px;
+    color: #2563eb;
+}
+
+/* Common card */
+.card {
+    background: white;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    color: #172d4f;
+}
+
+/* Users */
+.user {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.user p {
+    margin-bottom: 0;
+    color: #64748b;
+}
+
+/* Task form */
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.formGrid label {
+    display: block;
+    font-weight: bold;
+    color: #475569;
+    margin-bottom: 5px;
+}
+
+/* Task */
+.task {
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background: #ffffff;
+}
+
+.task h3 {
+    margin-top: 0;
+    color: #172d4f;
+}
+
+.task p {
+    color: #64748b;
+}
+
+/* Task tags */
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.tag {
+    background: #eff6ff;
+    color: #1e40af;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Blocked task */
+.blocked {
+    color: #dc2626 !important;
+    font-weight: bold;
+}
+
+/* Task actions */
+.taskActions {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: wrap;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .formGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .task {
+        flex-direction: column;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .statsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .card,
+    .welcome {
+        margin: 15px;
+    }
+
+    .message {
+        margin: 15px;
+    }
+
+    .loginCard {
+        width: 100%;
+        max-width: 400px;
+        padding: 30px 25px;
+    }
+
+    .loginPage {
+        padding: 20px;
+    }
+}
