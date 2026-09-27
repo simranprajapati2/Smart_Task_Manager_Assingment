@@ -1,7 +1,11 @@
 # Smart_Task_Manager_Assingment
-# Smart Task Manager
+
 
 Application built using Next.js, React, Node.js and Express.js.
+
+# Problem Statement
+
+Build a Smart Task Manager Web Application that allows users to create, edit, assign, and track tasks. The application supports multiple users, task priorities, statuses, and task dependencies. A task can depend on another task. Data is managed in memory for this exercise to simulate a real-world collaboration and state-driven application.
 
 ## Features
 
@@ -37,6 +41,48 @@ Application built using Next.js, React, Node.js and Express.js.
 ### Database
 - In-memory JavaScript Map
 
+# Installation
+
+Backend
+
+cd backend
+npm install
+
+Frontend
+
+Open a second terminal:
+
+cd frontend
+npm install
+
+Run the Application
+
+Two terminals are required.
+
+Terminal 1: Backend
+
+cd backend
+npm run dev
+
+If the project does not have a dev script:
+
+node server.js
+
+Backend:
+
+http://localhost:5000
+
+Terminal 2: Frontend
+
+cd frontend
+npm run dev
+
+Frontend:
+
+http://localhost:3000
+
+
+
 ## Project Structure
 
 ```text
@@ -59,3 +105,5 @@ Assignment_Task_Manager/
 │
 ├── README.md
 └── .gitignore
+
+
